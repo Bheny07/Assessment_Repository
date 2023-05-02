@@ -11,4 +11,3 @@ elif response.lower() == "no":
 else:
     print("Sorry, I didn't understand your response. Please enter 'yes' or "
           "'no'.")
-
