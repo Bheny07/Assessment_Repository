@@ -4,7 +4,6 @@ def quiz_played_before():
     response1 = input("Have you played the quiz before? Enter 'yes' or 'no': ")
 
     if response1.lower() in ["yes", "y"]:
-        print("Welcome back!")
         return True
     elif response1.lower() in ["no", "n"]:
         print("Great, let's get started!\nThis is a quiz on your knowledge of"
