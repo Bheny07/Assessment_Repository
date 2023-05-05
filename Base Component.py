@@ -7,12 +7,12 @@ def quiz_played_before():
         return True
     elif response1.lower() in ["no", "n"]:
         print("Great, let's get started!\nThis is a quiz on your knowledge of"
-              "Maori numbers\nThese are the Instructions:\n1. Select your "
+              " Maori numbers\nThese are the Instructions:\n1. Select your "
               "difficulty from 1-3 with 3 being the hardest.\n2. "
               "Answer the questions that are shown on screen. If you get it "
               "correct, it will say 'Correct' and if wrong it will say 'Wrong'"
               "\n""3. Continue on with questions and get your final results"
-              "once the quiz is finished.\n Lets play!")
+              " once the quiz is finished.\n Lets play!")
         return False
     else:
         print("Sorry, I didn't understand your response. "
