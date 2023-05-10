@@ -3,9 +3,19 @@ numbers will be shown to the user"""
 
 import random
 
-# Define a dictionary of Maori numbers from 1-10
+# Define a dictionary of Maori numbers from 1-30
 maori_numbers = {'tahi': 1, 'rua': 2, 'toru': 3, 'wha': 4, 'rima': 5, 'ono': 6,
-                 'whitu': 7, 'waru': 8, 'iwa': 9, 'tekau': 10}
+                 'whitu': 7, 'waru': 8, 'iwa': 9, 'tekau': 10, 'tekau-ma-tahi':
+                     11, 'tekau-ma-rua': 12, 'tekau-ma-toru': 13,
+                 'tekau-ma-wha': 14, 'tekau-ma-rima': 15,
+                 'tekau-ma-ono': 16, 'tekau-ma-whitu': 17,
+                 'tekau-ma-waru': 18, 'tekau-ma-iwa': 19,
+                 'rua tekau': 20, 'rua tekau ma tahi': 21,
+                 'rua tekau ma rua': 22, 'rua tekau ma toru': 23,
+                 'rua tekau ma wha': 24, 'rua tekau ma rima': 25,
+                 'rua tekau ma ono': 26,
+                 'rua tekau ma whitu': 27, 'rua tekau ma waru': 28,
+                 'rua tekau ma iwa': 29, 'tekau ma tekau': 30}
 
 
 # Define a function to generate a random question

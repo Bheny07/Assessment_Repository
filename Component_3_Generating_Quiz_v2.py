@@ -1,6 +1,7 @@
-"""Adding the difficulty levels component where e.g. if the user selected
- difficulty level 3, It would display level 3 difficulty questions only. Also
- adding number of questions variable to set how much questions the code asks"""
+"""Adding Component_2_Establishing_Quiz_v2's code where e.g. if the user
+selected difficulty level 3, It would display level 3 difficulty questions only
+. Also adding a set number questions variable to set how much questions the
+program will ask asks"""
 
 import random
 
@@ -9,7 +10,7 @@ maori_numbers_level1 = {'tahi': 1, 'rua': 2, 'toru': 3, 'wha': 4, 'rima': 5,
                         'ono': 6,
                         'whitu': 7, 'waru': 8, 'iwa': 9, 'tekau': 10}
 
-maori_numbers_level2 = {'kotahi': 1, 'tekau-ma-tahi': 11, 'tekau-ma-rua': 12,
+maori_numbers_level2 = {'tekau-ma-tahi': 11, 'tekau-ma-rua': 12,
                         'tekau-ma-toru': 13,
                         'tekau-ma-wha': 14, 'tekau-ma-rima': 15,
                         'tekau-ma-ono': 16, 'tekau-ma-whitu': 17,
