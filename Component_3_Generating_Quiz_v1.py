@@ -41,5 +41,5 @@ if __name__ == '__main__':
     for i in range(num_questions):
         # Generate a random question
         question, answer = generate_question()
-        # Ask the question and get the user's answer
+        # Ask the question
         ask_question(question)
