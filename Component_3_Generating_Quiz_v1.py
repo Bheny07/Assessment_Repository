@@ -20,7 +20,7 @@ maori_numbers = {'tahi': 1, 'rua': 2, 'toru': 3, 'wha': 4, 'rima': 5, 'ono': 6,
 
 # Define a function to generate a random question
 def generate_question():
-    # Choose a random number from 1-10
+    # Choose a random number from 1-30
     word = random.choice(list(maori_numbers.keys()))
     # Get the Maori word for that number
     answer1 = maori_numbers[word]
