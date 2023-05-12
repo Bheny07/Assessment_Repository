@@ -35,7 +35,7 @@ maori_numbers_level1 = {'tahi': 1, 'rua': 2, 'toru': 3, 'wha': 4, 'rima': 5,
                         'ono': 6,
                         'whitu': 7, 'waru': 8, 'iwa': 9, 'tekau': 10}
 
-maori_numbers_level2 = {'kotahi': 1, 'tekau-ma-tahi': 11, 'tekau-ma-rua': 12,
+maori_numbers_level2 = {'tekau-ma-tahi': 11, 'tekau-ma-rua': 12,
                         'tekau-ma-toru': 13,
                         'tekau-ma-wha': 14, 'tekau-ma-rima': 15,
                         'tekau-ma-ono': 16, 'tekau-ma-whitu': 17,
@@ -60,9 +60,13 @@ def generate_question(difficulty_level1):
     elif difficulty_level1 == 2:
         word = random.choice(list(maori_numbers_level2.keys()))
         answer1 = maori_numbers_level2[word]
-    else:
+    elif difficulty_level1 == 3:
         word = random.choice(list(maori_numbers_level3.keys()))
         answer1 = maori_numbers_level3[word]
+    else:
+        print("Invalid difficulty level. Please choose a "
+              "difficulty level between 1 and 3.")
+        return None, None
 
     # Return a tuple of the question and answer
     question1 = f"What number is {word}?"
@@ -83,17 +87,17 @@ def ask_question(question2):
 if __name__ == '__main__':
     while True:
         # Get the difficulty level from the user
-        difficulty_level = int(input("Choose a difficulty level (1, 2, or 3): "
-                                     ""))
+        difficulty_level = int(input("Choose a difficulty level (1, 2, or 3):"
+                                     " "))
+        if difficulty_level not in [1, 2, 3]:
+            print("Invalid difficulty level. Please choose a "
+                  "difficulty level between 1 and 3.")
+            continue
         print(f"You selected difficulty level {difficulty_level}.")
         response = input("Would you like to start the quiz with this "
                          "difficulty level? (yes/no) ")
         if response.lower() in ["yes", "y"]:
             break
-        elif response.lower() in ["no", "n"]:
-            print("Okay, let's try again.")
-        else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
 
     # Set the number of questions based on the difficulty level
     if difficulty_level == 1:
