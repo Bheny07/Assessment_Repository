@@ -1,5 +1,4 @@
-"""Turning v3's code into a function so that if they have played the quiz
- and returns True if the user has played before, or False if they have not."""
+"""Adding Final version of Component 1 Instructions and Guide Code"""
 
 
 # Function to ask if User has played the quiz before
@@ -26,3 +25,4 @@ def quiz_played_before():
 
 # Call the function to ask the user if they have played the quiz before
 played_before = quiz_played_before()
+
