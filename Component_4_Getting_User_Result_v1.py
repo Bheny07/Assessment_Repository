@@ -1,8 +1,8 @@
 """Creating a function that gives the user a score counter to see how much
 they have got correct so far. E.g. User gets answer correct, the code will
-add one to the score and print it out so the user can see how much they have
-left. We will be adding Component_3_Generating_Quiz_V2's code to give us
-questions"""
+add one to the score and print it out at the end so the user can see how much
+they have left. We will be adding Component_3_Generating_Quiz_V2's code
+to give us questions"""
 
 import random
 
