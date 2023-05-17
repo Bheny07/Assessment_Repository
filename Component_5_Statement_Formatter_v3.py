@@ -21,12 +21,3 @@ print(formatter("*", "Goodbye"))
 print()
 print(formatter("-", f"Your current score is: "))
 print()
-print(formatter("-", "\nThis is a quiz on your knowledge of"
-                     " Maori numbers\nThese are the Instructions:\n1. "
-                     "Select your difficulty from 1-3 with 3 being the"
-                     " hardest.\n2. Answer the 5 questions that are "
-                     "shown on screen. If you get it correct, it will "
-                     "say 'Correct' and if wrong it will say 'Wrong'"
-                     "\n""3. Continue on with questions and get your "
-                     "final results once the quiz is finished.\n "
-                     "Lets play!\n"))

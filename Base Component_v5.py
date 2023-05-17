@@ -20,15 +20,15 @@ def quiz_played_before():
     if response1.lower() in ["yes", "y"]:
         return True
     elif response1.lower() in ["no", "n"]:
-        print(formatter("-", "\nThis is a quiz on your knowledge of"
-                             " Maori numbers\nThese are the Instructions:\n1. "
-                             "Select your difficulty from 1-3 with 3 being the"
-                             " hardest.\n2. Answer the 5 questions that are "
-                             "shown on screen. If you get it correct, it will "
-                             "say 'Correct' and if wrong it will say 'Wrong'"
-                             "\n""3. Continue on with questions and get your "
-                             "final results once the quiz is finished.\n "
-                             "Lets play!\n"))
+        print("\nThis is a quiz on your knowledge of"
+              " Maori numbers\nThese are the Instructions:\n1. "
+              "Select your difficulty from 1-3 with 3 being the"
+              " hardest.\n2. Answer the 5 questions that are "
+              "shown on screen. If you get it correct, it will "
+              "say 'Correct' and if wrong it will say 'Wrong'"
+              "\n""3. Continue on with questions and get your "
+              "final results once the quiz is finished.\n "
+              "Lets play!\n")
         return False
     else:
         print("Sorry, I didn't understand your response. "
@@ -141,7 +141,7 @@ if __name__ == '__main__':
 
         # Print the final score
         print(formatter("-", f"Your final score is: {score}/{num_questions} "
-                        f"Congratulations"))
+                             f"Congratulations"))
 
         # Ask the user if they want to play again
         play_again_response = input("Would you like to play again? (yes/no) ")
