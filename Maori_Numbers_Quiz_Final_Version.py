@@ -1,5 +1,4 @@
-"""Adding on from Base Component v4 and adding final version of Component 5
-Statement Formatter Code."""
+"""Final Version of Maori Numbers Quiz"""
 
 import random
 
