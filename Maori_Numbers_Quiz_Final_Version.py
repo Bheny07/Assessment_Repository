@@ -14,8 +14,7 @@ def formatter(symbol1, text1):
 # Function to ask if User has played the quiz before
 def quiz_played_before():
     print(formatter("-", "Welcome to the Maori Numbers Quiz"))
-    response1 = input("Have you played the quiz before? Enter 'yes' or 'no': "
-                      "")
+    response1 = input("Have you played the quiz before? Enter 'yes' or 'no': ")
     if response1.lower() in ["yes", "y"]:
         return True
     elif response1.lower() in ["no", "n"]:
@@ -34,6 +33,15 @@ def quiz_played_before():
               "Please enter 'yes' or 'no'.\n")
         # Call the function recursively until a valid response is entered
         return quiz_played_before()
+
+
+# Function to check if a string can be converted to an integer
+def is_integer(string):
+    try:
+        int(string)
+        return True
+    except ValueError:
+        return False
 
 
 # Call the function to ask the user if they have played the quiz before
@@ -96,26 +104,24 @@ if __name__ == '__main__':
     while play_again:
         while True:
             # Get the difficulty level from the user
-            difficulty_level = int(input("Choose a difficulty "
-                                         "level (1, 2, or 3): "))
+            difficulty_level = input("Choose a difficulty level (1, 2, or 3): "
+                                     "")
+            if not is_integer(difficulty_level):
+                print("Invalid difficulty level. Please enter a number.")
+                continue
+            difficulty_level = int(difficulty_level)
             if difficulty_level not in [1, 2, 3]:
                 print("Invalid difficulty level. Please choose a "
                       "difficulty level between 1 and 3.")
                 continue
             print(f"\nYou selected difficulty level {difficulty_level}.")
             response = input("Would you like to start the quiz "
-                             "with this difficulty level? "
-                             "(yes/no) ")
+                             "with this difficulty level? (yes/no) ")
             if response.lower() in ["yes", "y"]:
                 break
 
         # Set the number of questions based on the difficulty level
-        if difficulty_level == 1:
-            num_questions = 5
-        elif difficulty_level == 2:
-            num_questions = 5
-        else:
-            num_questions = 5
+        num_questions = 5
 
         # Initialize the score
         score = 0
@@ -128,7 +134,7 @@ if __name__ == '__main__':
             user_answer = ask_question(question)
 
             # Check if the user's answer is correct and update the score
-            if int(user_answer) == answer:
+            if is_integer(user_answer) and int(user_answer) == answer:
                 score += 1
                 print(formatter("!", "Correct"))
             else:
